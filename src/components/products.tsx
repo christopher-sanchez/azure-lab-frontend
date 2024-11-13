@@ -1,5 +1,5 @@
 import axios from "axios";
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface Product {
     id: number;
@@ -47,6 +47,7 @@ const Products = () => {
                 'Authorization': 'Bearer ' + sessionStorage.getItem("token")
             }
         });
+        console.log(res);
         getProducts();
     }
 
