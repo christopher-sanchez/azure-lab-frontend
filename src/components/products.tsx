@@ -9,7 +9,7 @@ interface Product {
 }
 
 const Products = () => {
-    const url = "http://localhost:5174/products";
+    const url = "https://az-cs-lab10-ggcxcheyg2efgph7.canadacentral-01.azurewebsites.net/";
     const [products, setProducts] = useState<Product[]>();
     const titleRef = useRef<HTMLInputElement>(null);
     const priceRef = useRef<HTMLInputElement>(null);
